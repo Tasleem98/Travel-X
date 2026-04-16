@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+     url(friend.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+
+}
+
+ .menu ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: large;
+    position: relative;
+}
+
+.menu ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+
+.menu ul li a:hover::before{
+    width: 100%;
+}
+
+.logo{
+    color: whitesmoke;
+    font-size: 30px;
+    letter-spacing: 2px;
+    
+}
+
+.btn{
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: indianred;
+    font-size: 15px;
+    padding: 12px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.btn:hover{
+    background: transparent;
+    border: 1px solid indianred;
+    color: indianred;
+}
+
+.contentbox{
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+    
+}
+
+h5{
+    color: brown;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+h1{
+    font-size: 4rem;
+    color: brown;
+}
+
+button{
+    width: 200px;
+    background-color: indianred;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 10px;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid indianred;
+    border-radius: 5px;
+    color: whitesmoke;
+    transition: 0.3s linear;
+}
+
